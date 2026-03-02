@@ -1,14 +1,9 @@
-const removeFromArray = function() {
-
-    let returnArray = arguments[0];
-
-    for(i = 1; i < returnArray.length; i++)
-    {
-        returnArray = returnArray.filter(num => num !== arguments[i]);
+const removeFromArray = function(array, ...args) {
+    return array.filter(val => !args.includes(val))
     }
-    return returnArray;
 
-};
+
+
 
 // Do not edit below this line
 module.exports = removeFromArray;
