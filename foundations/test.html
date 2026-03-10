@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function divisableBy3or5(num){
+            // let units = num%10;             
+            // let tens = (parseInt(num/10))%10;
+            // let hundreds = parseInt(parseInt(num/10)/10); 
+                
+            // console.log (units + tens + hundreds);
+
+            // if ((units + tens + hundreds)%3 === 0)
+            //     console.log("Fizz");
+
+
+            
+
+            
+
+            if ((num % 3 === 0 ) && (num % 5 === 0 ))
+                console.log("FizzBuzz");
+            else if (num % 3 === 0 )
+                console.log("Fizz");  
+            else if (num % 5 === 0 )
+                console.log("Buzz");  
+            
+
+
+        }
+
+        divisableBy3or5(35);
+    </script>
+</body>
+</html>
